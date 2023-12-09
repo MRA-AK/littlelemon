@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework.authtoken',
+    'djoser',
     'restaurant',
 ]
 
@@ -146,3 +147,7 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ]
 }
+
+
+# Djoser settings
+DJOSER={"USER_ID_FIELD":"username"}
